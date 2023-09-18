@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+    environment {
+        // Add the path to the directory containing cmd.exe and other required executables
+        PATH = "C:\\Windows\\System32"
+    }
     stages {
         stage('Checkout') {
             steps {
