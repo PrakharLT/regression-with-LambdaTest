@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the Git repository
-                checkout scm
+                // Checkout the Git repository with the correct default branch
+                checkout([$class: 'GitSCM', branches: [[name: 'main']], userRemoteConfigs: [[url: 'https://github.com/PrakharLT/regression-with-LambdaTest.git']]])
             }
         }
 
