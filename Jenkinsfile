@@ -12,9 +12,9 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 // Run the Python script using the Python executable
-                """
-                python test.py
-                """
+                
+                bat 'python test.py'
+                
                 
             }
         }
