@@ -12,7 +12,7 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 // Run the Python script using the Python executable
-                cmd """
+                """
                 python test.py
                 """
                 
