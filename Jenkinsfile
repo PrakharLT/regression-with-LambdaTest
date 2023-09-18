@@ -12,7 +12,7 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 // Run the Python script using the Python executable
-                powershell """
+                cmd """
                 python test.py
                 """
                 
