@@ -18,7 +18,7 @@ pipeline {
             steps {
                 // Run the Python script using the Python executable
                 
-                bat 'python3 test.py'
+                bat 'python test.py'
                 
                 
             }
