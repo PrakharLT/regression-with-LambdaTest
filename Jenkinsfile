@@ -6,7 +6,7 @@ pipeline {
         PATH = "C:\\Python311;$PATH"
         // Add the path to cmd
         PATH = "C:\\Windows\\System32;$PATH"
-    
+     }
     stages {
         stage('Checkout') {
             steps {
