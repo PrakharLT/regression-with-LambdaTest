@@ -1,9 +1,12 @@
 pipeline {
     agent any
-    environment {
-        // Add the path to the directory containing cmd.exe and other required executables
-        PATH = "C:\\Windows\\System32"
-    }
+    
+     environment {
+        // Add the path to Python executable
+        PATH = "C:\\Python311;$PATH"
+        // Add the path to cmd
+        PATH = "C:\\Windows\\System32;$PATH"
+    
     stages {
         stage('Checkout') {
             steps {
