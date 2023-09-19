@@ -9,7 +9,11 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+
 steps:
 - script: |
     python test.py
   displayName: 'Run test.py'
+  env:
+    LT_USERNAME: $(LT_USERNAME)
+    LT_ACCESS_KEY: $(LT_ACCESS_KEY)
