@@ -23,7 +23,7 @@ class FirstSampleTest(unittest.TestCase):
             "network": 'true',  # Enable or disable network logs
             "smartUI.project": "Testing-Smart-UI",
             # Build name for smartUI(optional)
-            "smartUI.build" : "smartui-0ead5f4c3f"
+            
         }
         chrome_options.set_capability("LT:Options", option)
         self.driver = webdriver.Remote(
