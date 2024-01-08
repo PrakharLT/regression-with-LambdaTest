@@ -11,8 +11,8 @@ jobs:
           name: install dependecy
           command: |
             pip install selenium  
-            export LT_USERNAME="$LT_USERNAME"
-            export LT_ACCESS_KEY="$LT_ACCESS_KEY"
+            export LT_USERNAME=$LT_USERNAME
+            export LT_ACCESS_KEY=$LT_ACCESS_KEY
 
 
       # Execute the Python test script using LambdaTest credentials
