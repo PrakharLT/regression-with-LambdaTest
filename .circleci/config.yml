@@ -7,6 +7,10 @@ jobs:
 
     steps:
       - checkout  # Checkout code from your repository
+      - run:
+          name: install dependecy
+          command: |
+            pip install selenium  
 
       # Execute the Python test script using LambdaTest credentials
       - run:
