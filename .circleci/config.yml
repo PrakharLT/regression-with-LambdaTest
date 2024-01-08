@@ -18,13 +18,14 @@ jobs:
       # Execute the Python test script using LambdaTest credentials
       - run:
           name: Run Python test script with LambdaTest credentials
+          environment:
+            LT_USERNAME: $LT_USERNAME  # Reference CircleCI environment variable
+            LT_ACCESS_KEY: $LT_ACCESS_KEY  # Reference CircleCI environment variable
           command: |
             export LT_USERNAME=$LT_USERNAME
             export LT_ACCESS_KEY=$LT_ACCESS_KEY
             python test.py
-          environment:
-            LT_USERNAME: $LT_USERNAME  # Reference CircleCI environment variable
-            LT_ACCESS_KEY: $LT_ACCESS_KEY  # Reference CircleCI environment variable
+
 workflows:
   version: 2
   test_workflow:
