@@ -12,6 +12,7 @@ class FirstSampleTest(unittest.TestCase):
     # Generate capabilities from here: https://www.lambdatest.com/capabilities-generator/
     # setUp runs before each test case and
     def setUp(self):
+        print(username,access_key)
         chrome_options = webdriver.ChromeOptions()
         option = {
             "build": 'PyunitTest sample build',  # Change your build name here
