@@ -23,6 +23,7 @@ class FirstSampleTest(unittest.TestCase):
             # "resolution": '1024x768', # change the resolution
             "network": 'true',  # Enable or disable network logs
             "smartUI.project": "Testing-Smart-UI",
+            "tunnel":'true'
             # Build name for smartUI(optional)
             
         }
